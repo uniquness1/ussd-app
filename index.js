@@ -5,13 +5,13 @@ const ussdMenu = require("ussd-builder");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const credentials = {
-  apikeys: 'sandbox',
-  username: 'c9abd16ada32e2174d52c0d48879c1a05c0c3d0bdae2aed287327228979e5ad5'
-};
-const AfricasTalking = require('africastalking')(credentials);
+// const credentials = {
+//   apikeys: 'sandbox',
+//   username: 'c9abd16ada32e2174d52c0d48879c1a05c0c3d0bdae2aed287327228979e5ad5'
+// };
+// const AfricasTalking = require('africastalking')(credentials);
 const menu = new ussdMenu();
-let dataToSave = [];
+let dataToSave = {};
 
 menu.startState({
   run: () => {
