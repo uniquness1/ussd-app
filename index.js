@@ -63,7 +63,7 @@ app.post("/ussd", (req, res) => {
   });
 });
 
-const port = 3000; // Specify the port number
+const port = 3000;
 app.listen(port, () => {
   console.log("Server is running on port " + port);
 });
